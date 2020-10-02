@@ -8,7 +8,6 @@ import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
-
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -16,15 +15,15 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Toolbar toolbar = (Toolbar) findViewById(R.id.app_bar);
+        Toolbar toolbar = findViewById(R.id.app_bar);
         setSupportActionBar(toolbar);
 
         if (getSupportActionBar() != null) {
-            getSupportActionBar().setTitle("Marvel");
+            getSupportActionBar().setTitle("Face Recognize");
         }
 
-        Button recognizeButton = (Button) findViewById(R.id.recognizeButton);
-        Button trainingButton = (Button) findViewById(R.id.trainingButton);
+        Button recognizeButton = findViewById(R.id.recognizeButton);
+        Button trainingButton = findViewById(R.id.trainingButton);
 
         recognizeButton.setOnClickListener(new View.OnClickListener() {
             @Override
